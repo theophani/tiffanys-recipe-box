@@ -376,7 +376,7 @@ function recipes_list (box) {
   });
 
   ajax({
-    url: "/recipes.json",
+    url: "./recipes.json",
     success: prepare_recipes,
     error: function () { console.log(arguments) }
   });
@@ -441,7 +441,7 @@ function prepare_ingredients (recipe_ingredients) {
 }
 
 ajax({
-  url: "/recipe_ingredients.json",
+  url: "./recipe_ingredients.json",
   success: prepare_ingredients,
   error: function () { console.log(arguments) }
 });
